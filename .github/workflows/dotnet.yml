@@ -71,6 +71,6 @@ deploy-to-dev:
       
            - uses: azure/webapps-deploy@v2
              with:
-               app-name: '{your_prefix}-dev'
-               images: {your_registry_name}.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
+                 app-name: '{your_prefix}-dev'
+                 images: tggkfizrc4fuwmpnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
