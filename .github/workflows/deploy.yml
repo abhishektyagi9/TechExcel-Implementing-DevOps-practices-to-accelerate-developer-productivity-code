@@ -19,7 +19,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
  
     - name: 'Deploy Azure Resource Manager (ARM) Template'
-      uses: Azure/arm-deploy@1.0.4
+      uses: Azure/arm-deploy@1.0.9
       with:
            template: ./InfrastructureAsCode/main.bicep
            resourceGroupName: ${{ secrets.AZURE_RG }}
