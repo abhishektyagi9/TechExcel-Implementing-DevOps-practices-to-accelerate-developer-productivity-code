@@ -6,7 +6,13 @@ permissions:
       contents: read
       
 env:
-  targetEnv: dev
+  appenv:
+      type: choice
+      description: Choose the target environment
+      options: 
+        - dev
+        - test
+        - prod
 
 name: Azure Bicep
 jobs:
@@ -30,4 +36,4 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./InfrastructureAsCode/main.bicep
-        parameters: environment=${{ env.targetEnv }}
+        parameters: environment=${{ env.appenv }}
