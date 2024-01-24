@@ -21,7 +21,7 @@ jobs:
     - name: 'Deploy Azure Resource Manager (ARM) Template'
       uses: Azure/arm-deploy@1.0.4
       with:
-           template: ./InfrastructureAsCode/main.json
+           template: ./InfrastructureAsCode/main.bicep
            resourceGroupName: ${{ secrets.AZURE_RG }}
            
     
