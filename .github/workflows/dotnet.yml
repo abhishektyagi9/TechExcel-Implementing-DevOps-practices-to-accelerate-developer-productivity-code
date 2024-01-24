@@ -76,6 +76,6 @@ jobs:
       
            - uses: azure/webapps-deploy@v2
              with:
-                 app-name: '{your_prefix}-dev'
+                 app-name: 'tggkfizrc4fuw-dev'
                  images: tggkfizrc4fuwmpnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
