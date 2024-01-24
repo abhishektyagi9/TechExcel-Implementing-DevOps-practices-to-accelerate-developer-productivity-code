@@ -1,4 +1,7 @@
 name: .NET CI
+permissions:
+      id-token: write
+      contents: read
 env:
    registryName: 'tggkfizrc4fuwmpnpreg.azurecr.io'
    repositoryName: techboost/dotnetcoreapp
