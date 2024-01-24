@@ -1,5 +1,10 @@
 name: .NET CI
-
+env:
+   registryName: 'tggkfizrc4fuwmpnpreg.azurecr.io'
+   repositoryName: techboost/dotnetcoreapp
+   dockerFolderPath: ./Application/src/RazorPagesTestSample
+   tag: ${{github.run_number}}
+    
 on:
   push:
     branches: [ main ]
